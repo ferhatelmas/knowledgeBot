@@ -1,0 +1,4 @@
+adapter: mysql
+database: my_database
+username: my_username
+password: my_password

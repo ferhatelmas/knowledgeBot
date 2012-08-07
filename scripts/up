@@ -1,0 +1,1 @@
+ruby -r ../db/migrate/001_create_questions.rb -e Questions.up
