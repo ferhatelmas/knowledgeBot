@@ -6,11 +6,11 @@ class Questions < ActiveRecord::Migration
     create_table :questions do |t|
       t.string :question_hash
       t.string :question_text
-      t.integer :correct
+      t.string :correct
       t.text :choices
     end
 
-    add_index :questions, :question_hash
+    add_index :questions, :question_hash, unique: true
   end
 
   def self.down
